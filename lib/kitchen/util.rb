@@ -112,7 +112,7 @@ module Kitchen
       cmd = "true" if cmd.to_s.empty?
       cmd = cmd.sub(/\n\Z/, "") if cmd =~ /\n\Z/
 
-      "sh -c '\n#{cmd}\n'"
+      cmd
     end
 
     # Modifes the given string to strip leading whitespace on each line, the
