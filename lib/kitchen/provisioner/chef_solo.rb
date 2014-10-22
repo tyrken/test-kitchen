@@ -41,7 +41,7 @@ module Kitchen
 
       # (see Base#run_command)
       def run_command
-        level = config[:log_level] == :info ? :auto : config[:log_level]
+        level = config[:log_level]# == :info ? :auto : config[:log_level]
 
         cmd = sudo(config[:chef_solo_path])
         args = [
