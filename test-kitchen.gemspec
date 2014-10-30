@@ -5,7 +5,7 @@ require "kitchen/version"
 require "English"
 
 Gem::Specification.new do |gem|
-  gem.name          = "test-kitchen"
+  gem.name          = "ttl-test-kitchen"
   gem.version       = Kitchen::VERSION
   gem.license       = "Apache 2.0"
   gem.authors       = ["Fletcher Nichol"]
@@ -28,6 +28,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency "net-ssh",         "~> 2.7"
   gem.add_dependency "safe_yaml",       "~> 1.0"
   gem.add_dependency "thor",            "~> 0.18"
+  gem.add_dependency "kitchen-vsphere", "~> 0.2.0.dev"
 
   gem.add_development_dependency "pry"
 
